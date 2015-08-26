@@ -1,7 +1,17 @@
 fileFormatVersion: 2
 guid: c2fd678031800493ea06887489436406
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: sprite50_0
+    21300002: sprite50_4
+    21300004: sprite50_6
+    21300006: sprite50_7
+    21300008: sprite50_8
+    21300010: sprite50_9
+    21300012: sprite50_10
+    21300014: sprite50_11
+    21300016: sprite50_1
+    21300018: sprite50_2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -22,16 +32,16 @@ TextureImporter:
   generateCubemap: 0
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 1024
+  maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -42,6 +52,36 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: sprite50_0
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 196
+        width: 903
+        height: 1112
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprite50_1
+      rect:
+        serializedVersion: 2
+        x: 1329
+        y: 194
+        width: 1143
+        height: 1184
+      alignment: 9
+      pivot: {x: .392894149, y: .414585203}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprite50_2
+      rect:
+        serializedVersion: 2
+        x: 2603
+        y: 196
+        width: 1304
+        height: 1108
+      alignment: 9
+      pivot: {x: .691845119, y: .423138112}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

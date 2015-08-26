@@ -1,7 +1,9 @@
 fileFormatVersion: 2
 guid: edc3be358eb5a434f9cb58badb3585e8
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Sprite02_0
+    21300002: Sprite02_1
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -22,16 +24,16 @@ TextureImporter:
   generateCubemap: 0
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 1024
+  maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -42,6 +44,26 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Sprite02_0
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 615
+        width: 761
+        height: 875
+      alignment: 9
+      pivot: {x: .47544533, y: .425255448}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite02_1
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 612
+        width: 851
+        height: 866
+      alignment: 9
+      pivot: {x: .474382579, y: .402901113}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

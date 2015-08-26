@@ -1,7 +1,10 @@
 fileFormatVersion: 2
 guid: 116a13e2e8fea43aab4525c9bba01eda
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: sprite51_0
+    21300002: sprite51_1
+    21300004: sprite51_2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -22,16 +25,16 @@ TextureImporter:
   generateCubemap: 0
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 1024
+  maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -42,6 +45,36 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: sprite51_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 197
+        width: 1211
+        height: 634
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprite51_1
+      rect:
+        serializedVersion: 2
+        x: 1461
+        y: 0
+        width: 972
+        height: 1000
+      alignment: 9
+      pivot: {x: .67523241, y: .595808327}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprite51_2
+      rect:
+        serializedVersion: 2
+        x: 2659
+        y: 91
+        width: 903
+        height: 816
+      alignment: 9
+      pivot: {x: .723989129, y: .493477136}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
