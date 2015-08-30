@@ -5,6 +5,10 @@ TextureImporter:
     21300000: sprite52_0
     21300002: sprite52_1
     21300004: sprite52_2
+    21300006: sprite52_3
+    21300008: sprite52_4
+    21300010: sprite52_5
+    21300012: sprite52_6
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -49,32 +53,72 @@ TextureImporter:
     - name: sprite52_0
       rect:
         serializedVersion: 2
-        x: 116
-        y: 287
-        width: 1161
-        height: 1051
+        x: 303
+        y: 458
+        width: 976
+        height: 1046
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: sprite52_1
       rect:
         serializedVersion: 2
-        x: 1555
-        y: 67
-        width: 1175
-        height: 1395
-      alignment: 9
-      pivot: {x: .432050794, y: .604927599}
+        x: 166
+        y: 2294
+        width: 983
+        height: 1040
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: sprite52_2
       rect:
         serializedVersion: 2
-        x: 3034
-        y: 228
-        width: 1696
-        height: 1051
+        x: 116
+        y: 3786
+        width: 1163
+        height: 1052
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprite52_3
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 3561
+        width: 1176
+        height: 1394
       alignment: 9
-      pivot: {x: .668687642, y: .493669361}
+      pivot: {x: .434235871, y: .624013305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprite52_4
+      rect:
+        serializedVersion: 2
+        x: 3034
+        y: 3727
+        width: 1696
+        height: 1052
+      alignment: 9
+      pivot: {x: .644848824, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprite52_5
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 1979
+        width: 1064
+        height: 1394
+      alignment: 9
+      pivot: {x: .5, y: .617486119}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprite52_6
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 1864
+        width: 1830
+        height: 1426
+      alignment: 9
+      pivot: {x: .693905532, y: .596665561}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
