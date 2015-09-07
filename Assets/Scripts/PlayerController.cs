@@ -4,10 +4,11 @@ using System.Collections;
 public class PlayerController : MonoBehaviour {
 	
 	// TODO: Make them dynamic
-	public float playerCentreLBound = -1.5f;	// left bound of the centre of the body
-	public float playerCentreRBound = 1.5f;		// right bound of the centre of the body
+	public float playerCentreLBound;	// left bound of the centre of the body
+	public float playerCentreRBound;	// right bound of the centre of the body
+	public float playerDodgeAmount;
 
-	private Animator animator;					// a reference to the player's animator component
+	private Animator animator;			// a reference to the player's animator component
 
 
 	// Use this for initialization
@@ -22,20 +23,33 @@ public class PlayerController : MonoBehaviour {
 	
 	}
 
+	void OnMouseDown() {
+
+		Vector3 mouseWorldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+		Vector2 playerToMouse = mouseWorldPoint - transform.position;				// get the position with respect to the pivot
+
+		if (playerToMouse.x >= playerCentreLBound && playerToMouse.x <= playerCentreRBound) {
+			animator.SetTrigger("playerDodge");
+			transform.position += Vector3.down * playerDodgeAmount;
+			Debug.Log ("Centre!");
+		}
+	}
+
 	void OnMouseUp(){
 		
 		Vector3 mouseWorldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-		Vector2 playerToMouse = mouseWorldPoint - transform.position;
+		Vector2 playerToMouse = mouseWorldPoint - transform.position;				// get the position with respect to the pivot
 		
 		if (playerToMouse.x > playerCentreRBound) {
 			animator.SetTrigger("playerRSlap");
-			Debug.Log("Right!");
 		} else if (playerToMouse.x < playerCentreLBound) {
 			animator.SetTrigger("playerLSlap");
-			Debug.Log("Left!");
 		} else {
-			Debug.Log("Centre!");
+			animator.SetTrigger("playerIdle");
+			transform.position += Vector3.up * playerDodgeAmount;
 		}
 		
 	}
+
+
 }
