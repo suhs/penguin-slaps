@@ -9,13 +9,11 @@ public class PlayerController : MonoBehaviour {
 	public float playerDodgeAmount;
 
 	private Animator animator;			// a reference to the player's animator component
-	private SpriteRenderer spriteRenderer;      //Store a component reference to the attached SpriteRenderer.
 
 
 	// Use this for initialization
 	void Start () {
 
-		spriteRenderer = GetComponent<SpriteRenderer> ();
 		animator = GetComponent<Animator> ();
 
 	}
