@@ -3,24 +3,25 @@ using System.Collections;
 
 public class PlayerStat : BaseStat {
 
-	private int _rage;					// Current rage points
-	private int _maxRage;				// Maximum rage points
+	protected int CurrRage { get; set; } 	// Current rage points
+	protected int MaxRage { get; set; }		// Maximum rage points
 
 	public PlayerStat () {
 
-		_rage = 0;
-		_maxRage = 100;
+		CurrRage = 0;
+		MaxRage = 100;
+	}
 
+
+	// UNDONE : init functions 
+	// Initialize property values for Afri (green one)
+	public void initAfri () {
+		
 	}
 	
-	public int CurrentRage {
-		get { return _rage; }
-		set { }
-	}
-
-	public int MaxRage {
-		get { return _maxRage; }
-		set { }
+	// Initialize property values for Adel (yellow one)
+	public void initAdel () {
+		
 	}
 
 }
