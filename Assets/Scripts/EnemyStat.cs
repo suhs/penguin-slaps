@@ -3,42 +3,45 @@ using System.Collections;
 
 public class EnemyStat : BaseStat {
 
-	protected int level { get; set; }		// level of the enemy
+	protected int Level { get; set; }		// level of the enemy
 
-	// TODO		: add levelUp function
-	// UNDONE	: implement all init functions
+	public EnemyStat (int l) : base () {
+		Level = l;
+	}
 
 	// Initialize property values for a balanced type
 	public void initBalanced () {
-		
+		Strength += Level;
+		updateDefense (Level);
+		updateEndur (Level);
+		updateSpeed (Level);
 	}
 	
 	// Initialize property values for a tanker, weak power type
-	// defense, health, spirit up
-	// everything else down, normal speed
+	// defense up
 	public void initTanker () {
-		
+		updateDefense (Level);
 	}
 
 	// Initialize property values for a power, slow type
 	// strength up
-	// everything else down, normal defense
-	public void initPower (float armPref) {
-
+	public void initPower (decimal armPref) {
+		Strength += Level;
+		updateArmPower (armPref);
 	}
 
 	// Initialize property values for a speed, weak type
 	// speed, stiffness, spirit up
-	// everything else down, normal health
 	public void initSpeedy () {
-
+		updateSpeed (Level);
+		updateEndur (Level);
 	}
 
 	// Initialize property values for a luck type
-	// criticalRate, criticalHit, speed, stiffnes, spirit up
-	// everything else significantly down
-	public void initLucky () {
-
+	// criticalRate, criticalHit
+	public void initLucky (int l) {
+		CriticalRate += l / 100M;
+		CriticalHit += l / 50M;  
 	}
 
 }
