@@ -8,19 +8,19 @@
 2. I'm currently working on abstraction of fighting objects (enemy & player)
 
 #### TO-DO List (to be updated)
-##### Graphics
-1. Enemy sprites (must be in order)
-2. Background 
-3. Status bars (health, rage)
-4. Fonts (Title, etc.)
+##### Main
+1. Implement Judge(fight) class
+    - Attack, Dodge, Damage, etc.
+2. Implement Enemy controller
+    - Animation triggers
+    - Attack AI (patterned attack)
+3. Connect Judge class to Enemy and Player controller
+4. Create stages(levels), pause page(menu), main page, game-over page
+5. Connect all components
+6. Work on the theme, scenario, art concept
+7. Polish the artwork
+8. Add special moves 
+9. Create and add vfx, sfx, soundtrack
 
-##### Sounds
-1. Sfx
-2. Soundtrack
-
-##### Scripts
-1. Game manager
-2. Enemy
-3. Fighting object
-
+##### Extra
 
