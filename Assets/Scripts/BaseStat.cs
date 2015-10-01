@@ -6,7 +6,7 @@ public class BaseStat : MonoBehaviour {
 
 	// properties
 	protected int MaxHealth { get; set; }			// Max health points
-	protected int CurrHealth { get; set; }			// Current health points
+	public int CurrHealth { get; set; }				// Current health points
 	protected int Strength { get; set; } 			// Damage each attack can do to opponents
 	protected int Defense { get; set; }				// Points that can be subtracted from the total damage points
 	protected int Endurance { get; set; }			// Endurance (related to)
@@ -55,9 +55,13 @@ public class BaseStat : MonoBehaviour {
 
 	// FIXME : nooooob
 
+	public int getMaxHealth () {
+		return MaxHealth;
+	}
+
 	// adjust Endurance, BurnoutCount, and SurvivalRate
 	public void updateEndur (int newEndur) {
-		int diff = Endurance - newEndur; // save the difference
+		int diff = newEndur - Endurance; // save the difference
 		int ratio = 2;
 		Endurance = newEndur;
 		SurvivalRate += (decimal)diff / (100 * ratio);
@@ -66,7 +70,7 @@ public class BaseStat : MonoBehaviour {
 
 	// adjust Speed, Stiffness, CoolDownTimes
 	public void updateSpeed (int newSpd) {
-		int diff = Speed - newSpd;
+		int diff = newSpd - Speed;
 		int ratio = 10;
 		Speed = newSpd;
 		StiffnessL += diff;
@@ -77,10 +81,10 @@ public class BaseStat : MonoBehaviour {
 
 	// adjust Defense and MaxHealth 
 	public void updateDefense (int newDefns) {
-		int diff = Defense - newDefns;
+		int diff = newDefns - Defense;
 		int ratio = 5;
 		Defense = newDefns;
-		MaxHealth = diff * ratio;
+		MaxHealth += diff * ratio;
 	}
 
 	// adjust ArmPower and all variables that have R and L 

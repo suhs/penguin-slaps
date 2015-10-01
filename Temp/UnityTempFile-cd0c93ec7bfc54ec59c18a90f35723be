@@ -45,6 +45,7 @@
 -define:UNITY_EDITOR_OSX
 'Assets/Scripts/BaseStat.cs'
 'Assets/Scripts/BoardManager.cs'
+'Assets/Scripts/EnemyStat.cs'
 'Assets/Scripts/FightObject.cs'
 'Assets/Scripts/GameManager.cs'
 'Assets/Scripts/PlayerController.cs'
