@@ -44,4 +44,8 @@ public class EnemyStat : BaseStat {
 		CriticalHit += l / 50M;  
 	}
 
+	public void setLevel (int l) {
+		Level = l;
+	}
+
 }

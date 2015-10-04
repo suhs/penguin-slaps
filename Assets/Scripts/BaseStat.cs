@@ -24,6 +24,7 @@ public class BaseStat : MonoBehaviour {
 	protected int StiffnessL { get; set; }			// Number of attacks required to trigger stiffness on a left arm
 	protected int BurnoutCount { get; set; }		// Number of attacks that cause 'burnout'
 	protected decimal BurnoutDuration { get; set; }	// Duration an object have to wait to
+	protected decimal KnockoutTime { get; set; }	// Knock out duration after attacked
 
 	// 
 	private decimal maxArmp = 1M;
@@ -49,6 +50,7 @@ public class BaseStat : MonoBehaviour {
 		BurnoutCount = 8;
 		BurnoutDuration = 3.0M;
 		SurvivalRate = 0.05M;
+		KnockoutTime = 1.0M;
 
 		CanAttack = false;
 	}
@@ -66,6 +68,7 @@ public class BaseStat : MonoBehaviour {
 		Endurance = newEndur;
 		SurvivalRate += (decimal)diff / (100 * ratio);
 		BurnoutCount += diff / ratio;
+		KnockoutTime -= diff / 10;
 	}
 
 	// adjust Speed, Stiffness, CoolDownTimes

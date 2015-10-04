@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerController : MonoBehaviour {
+public class Player : MonoBehaviour {
 
 	// Adel related
 	private string _adelName = "PenguinY";
@@ -21,11 +21,13 @@ public class PlayerController : MonoBehaviour {
 	public GameObject healthBar;		// health bar
 	public Animator animator;			// a reference to the player's animator component
 
+	public GameObject opponent;			// enemy reference
 
 	// Use this for initialization
 	void Start () {
 
 		_playerStat = gameObject.AddComponent ("PlayerStat") as PlayerStat;
+		opponent = GameObject.FindGameObjectWithTag("Enemy");
 
 		if (this.gameObject.name == _adelName) { // character is Adel
 			_playerStat.initAdel ();
@@ -87,5 +89,10 @@ public class PlayerController : MonoBehaviour {
 		_playerStat.CurrHealth -= 10;
 		float hPercent = (float)_playerStat.CurrHealth / _playerStat.getMaxHealth ();
 		updateHealthBar (hPercent);
+	}
+
+	public void damaged () {
+
+
 	}
 }
